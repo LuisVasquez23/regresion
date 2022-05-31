@@ -30,7 +30,7 @@ btn_calculadora.addEventListener('click' , async ()=>{
 
 // Funcion para obtener los datos de la encuesta
 async function getData() {
-    let data = await axios.get('/datos.json');
+    let data = await axios.get('../datos.json');
     let datos = data.data;
     return datos;
 }
